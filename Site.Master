@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="UON.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <style>
+        footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+    footer a:hover {
+        color: #f1f1f1;
+    }
+    </style>
+    <%--- bootstrap css ---%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+        <%--- bootstrap ---%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <%--- popper js ---%>
+    <script src="bootstrap/js/popper.min.js"></script>
+
+    <%--- jquery js ---%>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <%--- datatables css ---%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <%--- fontawesome css ---%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <%--- sitemaster css---%>
+    <link href="UIL/CusCSS/sitemaster.css" rel="stylesheet" />
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    </head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <header>
+            <div class="container-fluid">
+               <nav class="navbar navbar-dark navbar-expand-md" style="background-color: darkblue">
+                   <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/UIL/Default">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/UIL/ToDoList">To-Do List</a>
+                        </li>
+                        <li><a class="nav-link" runat="server" >Campus Life</a>
+                            
+                                <ul class="sub_menu">
+                                    <li><a class="nav-link" runat="server" href="UIL/event.aspx">Events</a>
+                                    <li><a class="nav-link" runat="server" href="UIL/food.aspx">Food Court</a>
+                                    <li><a class="nav-link" runat="server" href="UIL/StdClub.aspx">Student Clubs</a>
+                                </ul>
+                            
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" runat="server">Explore</a>
+                            <ul class="sub_menu">
+                                    <li><a class="nav-link" runat="server" href="UIL/PoliceStation.aspx">Police Station</a>
+                                    <li><a class="nav-link" runat="server" href="UIL/Hospitals.aspx">Hospital</a>
+                                    <li><a class="nav-link" runat="server" href="UIL/FunAndFree.aspx">Things to Do in SG</a>
+                                </ul>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/UIL/Academic.aspx">Academic Support</a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/UIL/Contact">Contact Us</a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/UIL/About">About us</a>
+                        </li>
+                       </ul>
+                   </nav>
+            </div>
+            
+        <div>
+            <div class="container-fluid">
+            <section class="row" >
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/UIL/img/UON.jpg" Height="280px" Width="100%"/>
+                 </section>
+                </div>
+        </div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            </header>
+        <footer style="background-color: black; color: white; padding-top: 20px; padding-right: 30px; padding-left: 30px;">
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-md-4 text-center">
+                        <a runat="server" href="UIL/About.aspx">About Us</a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a runat="server" href="UIL/Contact.aspx">Contact Us</a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a runat="server" href="UIL/AdminLogin.aspx">Admin Login</a>
+                    <br />
+                    <br />
+                    </div>
+                    
+                <div class="col-md-12 text-center">
+                        <p>@Copyright by ACE</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+                </form>
+        </body>
+</html>

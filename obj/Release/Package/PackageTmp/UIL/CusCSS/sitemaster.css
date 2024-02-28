@@ -1,0 +1,33 @@
+﻿.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sub_menu {
+    background-color: darkblue;
+    position: absolute;
+    display: none;
+    top: 48px;
+    line-height: 10px;
+    border-bottom: 5px solid;
+    padding-left: 0;
+}
+
+
+
+
+.sub_menu li {
+    padding-top: 10px;
+}
+
+.navbar-nav li:hover .sub_menu {
+    display: block;
+
+}
+
+.navbar-nav li:hover .sub_menu li {
+    display: block;
+    margin: 10px;
+}
+
+

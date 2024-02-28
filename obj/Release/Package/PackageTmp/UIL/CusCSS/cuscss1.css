@@ -1,0 +1,25 @@
+﻿
+
+.google-map {
+    padding-bottom: 30%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+    .google-map iframe {
+        height: 50%;
+        width: 40%;
+        left: 0;
+        top: 0;
+        float: left;
+        position: absolute;
+
+    }
+
+.heading {
+    color: #1a202c;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+

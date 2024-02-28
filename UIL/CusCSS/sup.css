@@ -1,0 +1,333 @@
+﻿body {
+    margin: 0;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.item {
+    width: 550px;
+    margin-bottom: 60px;
+}
+
+.item-1 {
+    width: 30%;
+    margin-bottom: 60px;
+    border: 1px solid #e1e1e1;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.item-1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.item-1 .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.item-1 .p2 {
+    padding: 15px;
+}
+
+.item-1 .title {
+    margin-bottom: 50px;
+}
+
+.mt {
+    margin-top: 10px;
+}
+
+.food-item {
+    width: 500px;
+    box-shadow: 8px 8px 15px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    margin-bottom: 150px;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.item .title {
+    font-size: 25px;
+}
+
+.item ul {
+    padding-left: 20px;
+}
+
+    .item ul li {
+        margin-bottom: 10px;
+    }
+
+        .item ul li a {
+            color: #2A2563;
+        }
+
+.item .contact-item-title {
+    color: #1EAAF1;
+    text-decoration: none;
+    font-family: 'Impact',Arial;
+    font-size: 16.5pt;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.item .contact-item-content > div {
+    color: #666666;
+    text-decoration: none;
+    font-family: 'Cascadia Mono',Arial;
+    font-size: 12.0pt;
+    font-style: normal;
+    font-weight: 400;
+}
+
+    .item .contact-item-content > div span {
+        color: #000000;
+    }
+
+.food-item .title {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Copperplate Gothic Bold", Arial;
+    font-size: 15pt;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.food-item .location {
+    display: flex;
+    align-items: center;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    font-family: "Cascadia Mono", Arial;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 40px;
+}
+
+    .food-item .location img {
+        width: 21px;
+        height: 21px;
+        margin-right: 15px;
+    }
+
+.food-item .time {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    justify-content: flex-end;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    font-family: "Cascadia Mono", Arial;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: 400;
+}
+
+    .food-item .time img {
+        width: 17px;
+        height: 17px;
+        margin-right: 15px;
+    }
+
+.bottom {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 200px 200px;
+    border-top: 1px solid #e1e1e1;
+    padding: 80px;
+}
+
+    .bottom > div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #5c626f;
+        border-radius: 5px;
+        width: 300px;
+    }
+
+        .bottom > div .icon {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #3d8dd1;
+        }
+
+            .bottom > div .icon img {
+                width: 40px;
+                height: 40px;
+            }
+
+        .bottom > div .title {
+            color: #3d8dd1;
+            padding: 30px 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .bottom > div .desc {
+            color: #5c626f;
+            padding: 0 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .bottom > div .action {
+            color: white;
+            background-color: #5c626f;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+.contact-title {
+    width: 1200px;
+    margin: 50px auto;
+    color: #1EAAF1;
+    text-decoration: none;
+    font-family: 'Impact',Arial;
+    font-size: 21.0pt;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.item-division {
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    margin-bottom: 50px;
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .form-control label {
+        width: 130px;
+    }
+
+    .form-control input {
+        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        width: 200px
+    }
+
+    .form-control button {
+        border: 1px solid #000000;
+        color: white;
+        background-color: #606060;
+        width: 150px;
+        height: 45px;
+        margin-top: 30px;
+    }
+
+        .form-control button + button {
+            margin-left: 50px;
+        }
+
+.student-associations-item {
+    width: 300px;
+    border: 1px solid #CCCCCC;
+    border-radius: 15px;
+}
+
+    .student-associations-item .title {
+        color: #82191F;
+        text-decoration: none;
+        font-family: 'Impact',Arial;
+        font-size: 15.0pt;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        margin: 10px 0 20px;
+    }
+
+    .student-associations-item .desc {
+        color: #999999;
+        text-decoration: none;
+        font-family: 'Impact',Arial;
+        font-size: 7.5pt;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+.switch {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 1200px;
+    margin: 30px auto 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+    .switch > div {
+        position: relative;
+        cursor: pointer;
+    }
+
+        .switch > div.active::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #a7293b;
+        }
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.modal-small img {
+    width: 400px;
+    height: 100%;
+}

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="UONSource-Web.config Connection String" description="UONSource Connection String used in web.config by the application to access the database." defaultValue="Data Source=uon-acedbserver.database.windows.net;Initial Catalog=UON_ACE;TrustServerCertificate=False;User ID=PyaePhyoZaw;Password=c34!2786" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\UON\\Tri\ 2\ \(23\)\\COMP\ Part\(B\)\\UON\(Final\)\\UON\(Final\)\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UONSource']/@connectionString" />
+  </parameter>
+</parameters>
